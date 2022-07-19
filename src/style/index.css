@@ -164,3 +164,53 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.suggestions-bar {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.suggestions-bar > .arrow {
+  width: 70px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  right: 225px;
+  position: absolute;
+  background: linear-gradient(270deg, #121212 67.19%, rgba(33, 33, 33, 0) 100%);
+}
+
+.suggestions-bar > .arrow > svg {
+  position: absolute;
+  right: 14px;
+}
+
+.suggestions-bar > .items {
+  height: 30px;
+  width: 100%;
+  margin-left: 22px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  gap: 12px;
+}
+.suggestions-bar > .items::-webkit-scrollbar {
+  display: none;
+}
+.suggestions-bar > .items > .item {
+  min-width: fit-content;
+  height: calc(100% - 2px);
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+  border: 1px solid #474747;
+  padding-inline: 12px;
+  background: #383838;
+  display: flex;
+  align-items: center;
+}

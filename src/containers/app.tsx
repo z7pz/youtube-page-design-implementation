@@ -382,6 +382,55 @@ function SearchBar() {
   );
 }
 
+function SuggestionsArrow() {
+  return (
+    <div class="arrow">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.7 12L9.39995 18.4L8.69995 17.7L14.3 12.1L8.69995 6.50002L9.39995 5.80002L15.7 12Z"
+          fill="white"
+        />
+      </svg>
+    </div>
+  );
+}
+function SuggestionsItems() {
+  return <div class="items">
+    <div class="item">Test</div>
+    <div class="item">Cook Studio</div>
+    <div class="item">UX</div>
+    <div class="item">Music</div>
+    <div class="item">Saintmartin</div><div class="item">Test</div>
+    <div class="item">Cook Studio</div>
+    <div class="item">UX</div>
+    <div class="item">Music</div>
+    <div class="item">Saintmartin</div><div class="item">Test</div>
+    <div class="item">Cook Studio</div>
+    <div class="item">UX</div>
+    <div class="item">Music</div>
+    <div class="item">Saintmartin</div><div class="item">Test</div>
+    <div class="item">Cook Studio</div>
+    <div class="item">UX</div>
+    <div class="item">Music</div>
+    <div class="item">Saintmartin</div>
+  </div>;
+}
+
+function SuggestionsBar() {
+  return (
+    <div class="suggestions-bar">
+      <SuggestionsItems />
+      <SuggestionsArrow />
+    </div>
+  );
+}
+
 const App: FunctionalComponent = () => {
   return (
     <div className="application">
@@ -400,6 +449,8 @@ const App: FunctionalComponent = () => {
       <div className="appbar-container">
         <div className="appbar">
           <SearchBar />
+          <Divider />
+          <SuggestionsBar />
           <div class="divider"></div>
         </div>
       </div>
