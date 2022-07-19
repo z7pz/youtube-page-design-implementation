@@ -51,7 +51,7 @@ body {
 }
 .sidebar::-webkit-scrollbar-track {
   background-color: #505050;
-  border: 5px solid #181818;
+  border: 5px solid #212121;
   border-radius: 100vh;
 }
 .appbar {
