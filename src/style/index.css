@@ -61,7 +61,6 @@ body {
   position: fixed;
   background: #181818;
 }
-
 .rooms {
   display: flex;
   flex-direction: column;
@@ -95,10 +94,12 @@ body {
   width: 100%;
   height: 1px;
   background-color: #383838;
-  margin-block: 16px;
 }
 .categories {
   margin-top: 66px;
+}
+.categories > .divider {
+  margin-block: 16px;
 }
 .category > .title {
   margin-left: 20px;
@@ -122,4 +123,44 @@ body {
 
 .users-room > {
   height: 30px !important;
+}
+
+.search-bar {
+  position: relative;
+  left: -225px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 36px;
+  margin-block: 7px;
+}
+
+.search-bar > input {
+  outline: none;
+  width: calc(478px - 6px);
+  padding-left: 6px;
+  background: #181818;
+  border: 1px solid #323232;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  border-radius: 2px 0px 0px 2px;
+  color: white;
+}
+.search-bar > .search {
+  width: 56px;
+  background-color: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar > .voice {
+  width: 36px;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
