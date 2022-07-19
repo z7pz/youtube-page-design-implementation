@@ -1,0 +1,118 @@
+:root {
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+.application {
+  display: flex;
+  flex-direction: row;
+}
+
+.youtube-bar {
+  position: fixed;
+  display: flex;
+  margin-left: 20px;
+  margin-top: 16px;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  height: 22px;
+}
+.sidebar-container,
+.appbar-container {
+  position: relative;
+}
+.sidebar-container {
+  background-color: red;
+  z-index: 1;
+  width: 225px;
+  height: 100%;
+}
+.appbar-container {
+  max-width: 100%;
+  height: 100%;
+}
+.sidebar {
+  width: 225px;
+  height: 100%;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #212121;
+}
+.appbar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #181818;
+}
+
+.rooms {
+  display: flex;
+  flex-direction: column;
+}
+.room-active {
+  background: #383838;
+}
+.room {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 10px);
+  height: 34px;
+  padding: 5px;
+}
+.room:hover {
+  background: #383838;
+}
+.room > svg {
+  margin-left: 20px;
+}
+.room > .title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+  margin-left: 20px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #383838;
+  margin-block: 16px;
+}
+.categories {
+    margin-top: 66px;
+}
+.category > .title {
+  margin-left: 20px;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  color: #aaaaaa;
+}
+.user-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+}
+.user-icon > image {
+  height: 22px;
+  /* safety first! :) */
+  width: 22px;
+}
+
+.users-room > {
+  height: 30px !important;
+}
